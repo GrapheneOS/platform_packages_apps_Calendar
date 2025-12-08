@@ -53,4 +53,8 @@ android_app {
     product_specific: true,
 
     aaptflags: ["--auto-add-overlay"],
+
+    lint: {
+        disabled_checks: ["ObjectAnimatorBinding"], // TODO: b/464004540 - remove once fixed
+    },
 }
